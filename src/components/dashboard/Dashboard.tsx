@@ -1,6 +1,7 @@
 import CardProyect from "./proyects/CardProyect";
 import OrderTasksButton from "./tasks/OrderTasksButton";
 import Tasks from "./tasks/Tasks";
+import Quote from "./quote/Quote";
 
 export default function Dashboard() {
     return (
@@ -37,9 +38,14 @@ export default function Dashboard() {
                 </div>
             </div>
             {/* Tareas recientes */}
-            <div className="my-10">
-                <OrderTasksButton />
-                <Tasks />
+            <div className="grid grid-cols-[3fr_1fr] my-10 gap-x-4">
+                <div className="">
+                    <OrderTasksButton />
+                    <Tasks />
+                </div>
+                <div className="">
+                    <Quote />
+                </div>
             </div>
         </div>
     );
