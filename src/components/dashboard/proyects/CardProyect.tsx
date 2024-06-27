@@ -1,3 +1,5 @@
+import Date from "../utils/Date";
+
 function getInfo(type: number) {
     switch (type) {
         case 1: // Front-end
@@ -83,11 +85,7 @@ export default function CardProyect({
                     </div>
                 </div>
             </div>
-            <div className="w-[125px] ">
-                <p className="text-gray-50 text-base bg-slate-300 px-2 rounded-lg text-center">
-                    26 Junio 2024
-                </p>
-            </div>
+            <Date />
         </div>
     );
 }
